@@ -40,28 +40,28 @@
 </head>
 <body>
     <!-- header navbar -->
-    <nav class="navbar navbar-expand-sm nav-bg">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- <nav class="navbar navbar-expand-sm nav-bg">
+        <div class="container">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExample07">
-        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item"><a href="/" class="nav-link link-dark text-white px-2 active" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Produk</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Promo</a></li>
-            <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Kontak Kami</a></li>
-        
-        
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-    
-    <div class="container">
+        <div class="collapse navbar-collapse" id="navbarsExample07">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item"><a href="/" class="nav-link link-dark text-white px-2 active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Produk</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Promo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark text-white px-2">Kontak Kami</a></li>
+
+
+
+            </ul>
+        </div>
+        </div>
+    </nav> -->
+
+    <div class="container mt-4 mb-4">
         <header class="d-flex justify-content-center">
             <img src="{{ asset('logo/sekoncoanflorist_black.PNG')}}" alt="sekoncoan_florist" width="350px">
         </header>
@@ -71,7 +71,7 @@
     <!-- cover -->
     <div class="container">
         <header class="d-flex justify-content-center py-3 mb-4 border-bottom border-top">
-        
+
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="/" class="nav-link px-5 link-dark menu-produk">Karangan Bunga</a></li>
             </ul>
@@ -93,12 +93,12 @@
                         <img src="{{ Storage::url('public/produks/').$produk->gambar_produk }}" style="height: 225">
                             <div class="card-body">
                                 <h5 class="card-title mt-3 mb-3 text-center ">{{ $produk->nama_produk }}</h5>
-                                <a href="https://wa.me/+6289664356291/?text=Hi, Sekoncoan Florist. Saya Berminat dengan Produk {{ $produk->nama_produk }}. Terima Kasih" class="button w-100 btn btn-lg btn-primary" target="_blank">Beli Produk</a>                          
+                                <a href="https://wa.me/+6289664356291/?text=Hi, Sekoncoan Florist. Saya Berminat dengan Produk {{ $produk->nama_produk }}. Terima Kasih" class="button w-100 btn btn-lg btn-primary" target="_blank">Beli Produk</a>
                             </div>
                         </div>
                     </div>
                     @endforeach
-                
+
                 </div>
             </div>
         </div>
@@ -133,7 +133,7 @@
                 </div>
         </div>
         <!-- /Pesanan  -->
-        
+
         <!-- produk lainnya -->
         <div class="album bg-light">
             <div class="container px-4 py-5" id="featured-3">
@@ -233,7 +233,7 @@
         </div>
         <!-- /Testimoni -->
 
-       
+
 
     </main>
     <!-- /main content -->
@@ -285,7 +285,7 @@
                     <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
                 </ul>
                 </div>
-                
+
             </footer>
         </div>
     </div>
