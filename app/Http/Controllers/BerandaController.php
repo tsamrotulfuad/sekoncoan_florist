@@ -7,13 +7,14 @@ use Illuminate\Support\Facades\Storage;
 use App\Models\Produk;
 use App\Models\Pembelian;
 use App\Models\Testimoni;
+use Illuminate\Support\Facades\DB;
 
 class BerandaController extends Controller
 {
     public function index()
     {
         // produk
-        $produks = Produk::latest()->get();
+        $produks = DB::table('produks')->orderBy('kode_produk', 'asc')->get();
         // pembelian
         $pembelians = Pembelian::latest()->limit(6)->get();
         // testimoni
